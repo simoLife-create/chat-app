@@ -1,0 +1,10 @@
+2025-03-22 00:19:25.872 [main] DEBUG com.saadbarhrouj.server.database.DatabaseManager - Connexion à la base de données réussie.
+2025-03-22 00:19:25.876 [main] INFO  com.saadbarhrouj.Main - Connexion à la base de données réussie !
+2025-03-22 00:34:13.183 [main] DEBUG com.saadbarhrouj.server.database.DatabaseManager - Connexion à la base de données réussie.
+2025-03-22 00:34:13.188 [main] INFO  com.saadbarhrouj.Main - Connexion à la base de données réussie !
+2025-03-22 00:34:13.194 [main] DEBUG com.saadbarhrouj.server.database.DatabaseManager - Connexion à la base de données réussie.
+2025-03-22 00:34:13.277 [main] DEBUG com.saadbarhrouj.server.database.DatabaseManager - Connexion à la base de données réussie.
+2025-03-22 00:34:13.309 [main] INFO  com.saadbarhrouj.Main - Utilisateur créé avec succès : 1, TestUser
+2025-03-22 00:34:13.316 [main] DEBUG com.saadbarhrouj.server.database.DatabaseManager - Connexion à la base de données réussie.
+2025-03-22 00:34:13.322 [main] INFO  com.saadbarhrouj.server.database.UserDAO - Utilisateur validé: test@example.com
+2025-03-22 00:34:13.323 [main] INFO  com.saadbarhrouj.Main - Utilisateur validé avec succès : 1, TestUser
