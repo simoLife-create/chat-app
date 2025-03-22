@@ -9,8 +9,12 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
+import java.net.DatagramPacket;
+import java.net.DatagramSocket;
+import java.net.InetAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.net.SocketException;
 import java.sql.SQLException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -20,11 +24,22 @@ public class TCPServer {
     private static final Logger logger = LogManager.getLogger(TCPServer.class);
     private ServerSocket serverSocket;
     private UserDAO userDAO; // Pour interagir avec la base de données des utilisateurs
+    private DatagramSocket udpSocket;  // Déplacer ici
+    private int udpPort = 12346;
 
     public TCPServer(int port, UserDAO userDAO) throws IOException {
         this.serverSocket = new ServerSocket(port);
         this.userDAO = userDAO;
         logger.info("Serveur TCP démarré sur le port: " + port);
+
+        try {
+            udpSocket = new DatagramSocket(udpPort);
+            logger.info("Serveur UDP démarré sur le port: " + udpPort);
+            startUdpListener();  // Démarrer l'écoute UDP dans le constructeur
+        } catch (SocketException e) {
+            logger.error("Erreur lors de la création du socket UDP.", e);
+            throw e;  // Important de relancer l'exception pour signaler l'échec
+        }
 
     }
 
@@ -33,17 +48,53 @@ public class TCPServer {
             while (true) {
                 Socket clientSocket = serverSocket.accept();
                 logger.info("Nouvelle connexion TCP acceptée depuis: " + clientSocket.getInetAddress());
-                new ClientHandler(clientSocket).start();
+                ClientHandler clientHandler = new ClientHandler(clientSocket);
+                clientHandler.start();
             }
         } catch (IOException e) {
             logger.error("Erreur lors de l'acceptation de la connexion TCP.", e);
         } finally {
             try {
                 serverSocket.close();
+                if (udpSocket != null) {
+                    udpSocket.close();
+                }
             } catch (IOException e) {
                 logger.error("Erreur lors de la fermeture du socket serveur.", e);
             }
         }
+    }
+
+    private void startUdpListener() {
+        new Thread(() -> {
+            try {
+                byte[] buffer = new byte[1024];
+                DatagramPacket packet = new DatagramPacket(buffer, buffer.length);
+
+                while (true) {
+                    udpSocket.receive(packet);
+                    String message = new String(packet.getData(), 0, packet.getLength());
+                    InetAddress clientAddress = packet.getAddress();
+                    int clientPort = packet.getPort();
+
+                    logger.info("Message UDP reçu de " + clientAddress + ":" + clientPort + ": " + message);
+
+                    // Envoyer un ACK au client UDP
+                    String ackMessage = "ACK";
+                    byte[] ackBuffer = ackMessage.getBytes();
+                    DatagramPacket ackPacket = new DatagramPacket(ackBuffer, ackBuffer.length, clientAddress, clientPort);
+                    udpSocket.send(ackPacket);
+
+                    // Envoyer le message à tous les clients TCP connectés
+                    for (ClientHandler client : ClientHandler.clients) {  //Utilise la liste statique
+                        client.out.println("MESSAGE " + message);  // Envoyer via TCP
+                    }
+                }
+
+            } catch (IOException e) {
+                logger.error("Erreur lors de la réception du message UDP.", e);
+            }
+        }).start();
     }
 
     private class ClientHandler extends Thread {
@@ -52,9 +103,14 @@ public class TCPServer {
         private BufferedReader in;
         private Gson gson;
 
+        //Ajouter la liste statique des clients
+        public static  java.util.List<ClientHandler> clients = new java.util.ArrayList<>();
+
+
         public ClientHandler(Socket socket) {
             this.clientSocket = socket;
             this.gson = new Gson();
+            clients.add(this); // Ajouter le client à la liste
         }
 
         @Override
@@ -76,6 +132,7 @@ public class TCPServer {
                     in.close();
                     out.close();
                     clientSocket.close();
+                    clients.remove(this);  // Supprimer le client de la liste
                     logger.info("Connexion TCP avec " + clientSocket.getInetAddress() + " fermée.");
                 } catch (IOException e) {
                     logger.error("Erreur lors de la fermeture des ressources client.", e);
@@ -84,9 +141,10 @@ public class TCPServer {
         }
 
         private void processInput(String input) throws IOException {
+            logger.info("Requete reçue: " + input);
             if (input.startsWith(Protocol.REGISTER)) {
                 String[] parts = input.split(" ");
-                if (parts.length == 5) {
+                if (parts.length == 4) { // Condition corrigée
                     String nom = parts[1];
                     String email = parts[2];
                     String password = parts[3];
@@ -109,10 +167,9 @@ public class TCPServer {
                     out.println(Protocol.INVALID_REQUEST);
                     logger.warn("Requête d'inscription invalide reçue.");
                 }
-            }
-            else if (input.startsWith(Protocol.LOGIN)) {
+            } else if (input.startsWith(Protocol.LOGIN)) {
                 String[] parts = input.split(" ");
-                if (parts.length == 4) {
+                if (parts.length == 3) {
                     String email = parts[1];
                     String password = parts[2];
 
@@ -137,9 +194,16 @@ public class TCPServer {
                     out.println(Protocol.INVALID_REQUEST);
                     logger.warn("Requête de connexion invalide reçue.");
                 }
-            } else if (input.startsWith("SEND_MESSAGE")) {
-                // Traitement de l'envoi de messages
-            } else {
+            } else if (input.startsWith(Protocol.SEND_MESSAGE)) {
+                logger.info("Traitement de SEND_MESSAGE " + input);
+                String message = input.substring(Protocol.SEND_MESSAGE.length()).trim();
+                logger.info("retransmission du message :" + message);
+                // Envoyer le message à tous les clients TCP connectés
+                for (ClientHandler client : ClientHandler.clients) {
+                    client.out.println("MESSAGE " + message);
+                }
+            }
+            else {
                 out.println(Protocol.UNKNOWN_COMMAND);
                 logger.warn("Commande inconnue reçue: " + input);
             }

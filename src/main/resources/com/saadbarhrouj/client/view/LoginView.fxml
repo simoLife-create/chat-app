@@ -11,6 +11,9 @@
 <?import javafx.scene.text.Font?>
 
 <GridPane alignment="CENTER" hgap="10" prefHeight="300.0" prefWidth="400.0" styleClass="login-pane" stylesheets="@style.css" vgap="10" xmlns="http://javafx.com/javafx/21.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.saadbarhrouj.client.controller.LoginController">
+    <padding>
+        <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+    </padding>
     <columnConstraints>
         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="120.0" />
         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="200.0" />

@@ -37,7 +37,6 @@ public class RegisterController {
         this.tcpClient = tcpClient;
     }
 
-
     @FXML
     void onRegisterButtonClick(ActionEvent event) {
         String nom = nomField.getText();
@@ -48,6 +47,10 @@ public class RegisterController {
             showAlert("Erreur", "Veuillez remplir tous les champs.");
             return;
         }
+
+        logger.info("Nom: " + nom); // Ajout
+        logger.info("Email: " + email); // Ajout
+        logger.info("Mot de passe: " + password); // Ajout
 
         try {
             User user = tcpClient.register(nom, email, password);

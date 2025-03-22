@@ -6,6 +6,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -16,12 +17,12 @@ import org.apache.logging.log4j.Logger;
 public class ChatApp extends Application {
 
     private static final Logger logger = LogManager.getLogger(ChatApp.class);
-    private TCPClient tcpClient;
+    private static TCPClient tcpClient; // Déclaré static
 
     @Override
-    public void start(Stage stage) throws IOException {
+    public void start(Stage stage) {
         try {
-            //Initialisation du client TCP
+            // Initialisation du client TCP
             tcpClient = new TCPClient("localhost", 12345); // Remplacez par l'adresse et le port de votre serveur
             tcpClient.startConnection();
 
@@ -40,7 +41,7 @@ public class ChatApp extends Application {
 
         } catch (IOException e) {
             logger.error("Erreur lors du chargement de l'interface graphique.", e);
-            throw e; // Re-lancer l'exception pour signaler l'échec du démarrage
+            showAlert("Erreur", "Erreur lors du chargement de l'interface graphique. Veuillez redémarrer l'application.");
         }
     }
 
@@ -53,8 +54,20 @@ public class ChatApp extends Application {
         super.stop();
     }
 
+    private void showAlert(String title, String message) {
+        Alert alert = new Alert(Alert.AlertType.ERROR);
+        alert.setTitle(title);
+        alert.setHeaderText(null);
+        alert.setContentText(message);
+        alert.showAndWait();
+    }
 
     public static void main(String[] args) {
         launch(args);
+    }
+
+    // Getter statique pour accéder à tcpClient
+    public static TCPClient getTcpClient() {
+        return tcpClient;
     }
 }

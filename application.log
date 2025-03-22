@@ -8,3 +8,802 @@
 2025-03-22 00:34:13.316 [main] DEBUG com.saadbarhrouj.server.database.DatabaseManager - Connexion à la base de données réussie.
 2025-03-22 00:34:13.322 [main] INFO  com.saadbarhrouj.server.database.UserDAO - Utilisateur validé: test@example.com
 2025-03-22 00:34:13.323 [main] INFO  com.saadbarhrouj.Main - Utilisateur validé avec succès : 1, TestUser
+2025-03-22 03:00:12.377 [main] INFO  com.saadbarhrouj.server.TCPServer - Serveur TCP démarré sur le port: 12345
+2025-03-22 03:15:59.238 [main] INFO  com.saadbarhrouj.server.TCPServer - Serveur TCP démarré sur le port: 12345
+2025-03-22 03:22:02.422 [main] INFO  com.saadbarhrouj.server.TCPServer - Nouvelle connexion TCP acceptée depuis: /127.0.0.1
+2025-03-22 03:22:02.433 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.network.TCPClient - Connecté au serveur TCP : localhost:12345
+2025-03-22 03:22:03.556 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.ChatApp - Application lancée avec succès.
+2025-03-22 03:25:41.603 [Thread-0] ERROR com.saadbarhrouj.server.TCPServer - Erreur lors de la communication avec le client.
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796) ~[?:?]
+	at java.base/java.net.Socket$SocketInputStream.implRead(Socket.java:1108) ~[?:?]
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1095) ~[?:?]
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350) ~[?:?]
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393) ~[?:?]
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217) ~[?:?]
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171) ~[?:?]
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:186) ~[?:?]
+	at java.base/java.io.BufferedReader.fill(BufferedReader.java:160) ~[?:?]
+	at java.base/java.io.BufferedReader.implReadLine(BufferedReader.java:370) ~[?:?]
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:347) ~[?:?]
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:436) ~[?:?]
+	at com.saadbarhrouj.server.TCPServer$ClientHandler.run(TCPServer.java:67) [classes/:?]
+2025-03-22 03:25:41.647 [Thread-0] INFO  com.saadbarhrouj.server.TCPServer - Connexion TCP avec /127.0.0.1 fermée.
+2025-03-22 03:25:44.855 [main] INFO  com.saadbarhrouj.server.TCPServer - Nouvelle connexion TCP acceptée depuis: /127.0.0.1
+2025-03-22 03:25:44.866 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.network.TCPClient - Connecté au serveur TCP : localhost:12345
+2025-03-22 03:25:46.381 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.ChatApp - Application lancée avec succès.
+2025-03-22 03:30:05.601 [Thread-1] ERROR com.saadbarhrouj.server.TCPServer - Erreur lors de la communication avec le client.
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796) ~[?:?]
+	at java.base/java.net.Socket$SocketInputStream.implRead(Socket.java:1108) ~[?:?]
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1095) ~[?:?]
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350) ~[?:?]
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393) ~[?:?]
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217) ~[?:?]
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171) ~[?:?]
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:186) ~[?:?]
+	at java.base/java.io.BufferedReader.fill(BufferedReader.java:160) ~[?:?]
+	at java.base/java.io.BufferedReader.implReadLine(BufferedReader.java:370) ~[?:?]
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:347) ~[?:?]
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:436) ~[?:?]
+	at com.saadbarhrouj.server.TCPServer$ClientHandler.run(TCPServer.java:67) [classes/:?]
+2025-03-22 03:30:05.604 [Thread-1] INFO  com.saadbarhrouj.server.TCPServer - Connexion TCP avec /127.0.0.1 fermée.
+2025-03-22 03:30:08.934 [main] INFO  com.saadbarhrouj.server.TCPServer - Nouvelle connexion TCP acceptée depuis: /127.0.0.1
+2025-03-22 03:30:08.940 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.network.TCPClient - Connecté au serveur TCP : localhost:12345
+2025-03-22 03:30:09.700 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.ChatApp - Application lancée avec succès.
+2025-03-22 03:30:26.872 [Thread-2] INFO  com.saadbarhrouj.server.TCPServer - Reçu du client: REGISTER saad saad@gmail.com Saad2001
+2025-03-22 03:30:26.874 [Thread-2] WARN  com.saadbarhrouj.server.TCPServer - Requête d'inscription invalide reçue.
+2025-03-22 03:30:26.874 [JavaFX Application Thread] WARN  com.saadbarhrouj.client.network.TCPClient - Echec de l'inscription: INVALID_REQUEST
+2025-03-22 03:30:26.874 [JavaFX Application Thread] WARN  com.saadbarhrouj.client.controller.RegisterController - Echec de l'inscription pour l'utilisateur: saad@gmail.com
+2025-03-22 03:31:45.902 [Thread-2] INFO  com.saadbarhrouj.server.TCPServer - Reçu du client: REGISTER saad saad@gmail.com Saad2001
+2025-03-22 03:31:45.902 [Thread-2] WARN  com.saadbarhrouj.server.TCPServer - Requête d'inscription invalide reçue.
+2025-03-22 03:31:45.902 [JavaFX Application Thread] WARN  com.saadbarhrouj.client.network.TCPClient - Echec de l'inscription: INVALID_REQUEST
+2025-03-22 03:31:45.902 [JavaFX Application Thread] WARN  com.saadbarhrouj.client.controller.RegisterController - Echec de l'inscription pour l'utilisateur: saad@gmail.com
+2025-03-22 03:32:23.797 [Thread-2] INFO  com.saadbarhrouj.server.TCPServer - Reçu du client: REGISTER saad saad@gmail.com Saad2001
+2025-03-22 03:32:23.797 [Thread-2] WARN  com.saadbarhrouj.server.TCPServer - Requête d'inscription invalide reçue.
+2025-03-22 03:32:23.799 [JavaFX Application Thread] WARN  com.saadbarhrouj.client.network.TCPClient - Echec de l'inscription: INVALID_REQUEST
+2025-03-22 03:32:23.799 [JavaFX Application Thread] WARN  com.saadbarhrouj.client.controller.RegisterController - Echec de l'inscription pour l'utilisateur: saad@gmail.com
+2025-03-22 03:32:39.799 [Thread-2] INFO  com.saadbarhrouj.server.TCPServer - Reçu du client: REGISTER saad saad@gmail.com Saad20012001
+2025-03-22 03:32:39.799 [Thread-2] WARN  com.saadbarhrouj.server.TCPServer - Requête d'inscription invalide reçue.
+2025-03-22 03:32:39.799 [JavaFX Application Thread] WARN  com.saadbarhrouj.client.network.TCPClient - Echec de l'inscription: INVALID_REQUEST
+2025-03-22 03:32:39.800 [JavaFX Application Thread] WARN  com.saadbarhrouj.client.controller.RegisterController - Echec de l'inscription pour l'utilisateur: saad@gmail.com
+2025-03-22 03:42:46.542 [Thread-2] ERROR com.saadbarhrouj.server.TCPServer - Erreur lors de la communication avec le client.
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796) ~[?:?]
+	at java.base/java.net.Socket$SocketInputStream.implRead(Socket.java:1108) ~[?:?]
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1095) ~[?:?]
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350) ~[?:?]
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393) ~[?:?]
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217) ~[?:?]
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171) ~[?:?]
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:186) ~[?:?]
+	at java.base/java.io.BufferedReader.fill(BufferedReader.java:160) ~[?:?]
+	at java.base/java.io.BufferedReader.implReadLine(BufferedReader.java:370) ~[?:?]
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:347) ~[?:?]
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:436) ~[?:?]
+	at com.saadbarhrouj.server.TCPServer$ClientHandler.run(TCPServer.java:67) [classes/:?]
+2025-03-22 03:42:46.551 [Thread-2] INFO  com.saadbarhrouj.server.TCPServer - Connexion TCP avec /127.0.0.1 fermée.
+2025-03-22 03:42:52.179 [main] INFO  com.saadbarhrouj.server.TCPServer - Nouvelle connexion TCP acceptée depuis: /127.0.0.1
+2025-03-22 03:42:52.190 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.network.TCPClient - Connecté au serveur TCP : localhost:12345
+2025-03-22 03:42:53.470 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.ChatApp - Application lancée avec succès.
+2025-03-22 03:43:42.525 [Thread-3] ERROR com.saadbarhrouj.server.TCPServer - Erreur lors de la communication avec le client.
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796) ~[?:?]
+	at java.base/java.net.Socket$SocketInputStream.implRead(Socket.java:1108) ~[?:?]
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1095) ~[?:?]
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350) ~[?:?]
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393) ~[?:?]
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217) ~[?:?]
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171) ~[?:?]
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:186) ~[?:?]
+	at java.base/java.io.BufferedReader.fill(BufferedReader.java:160) ~[?:?]
+	at java.base/java.io.BufferedReader.implReadLine(BufferedReader.java:370) ~[?:?]
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:347) ~[?:?]
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:436) ~[?:?]
+	at com.saadbarhrouj.server.TCPServer$ClientHandler.run(TCPServer.java:67) [classes/:?]
+2025-03-22 03:43:42.540 [Thread-3] INFO  com.saadbarhrouj.server.TCPServer - Connexion TCP avec /127.0.0.1 fermée.
+2025-03-22 03:43:45.189 [main] INFO  com.saadbarhrouj.server.TCPServer - Nouvelle connexion TCP acceptée depuis: /127.0.0.1
+2025-03-22 03:43:45.197 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.network.TCPClient - Connecté au serveur TCP : localhost:12345
+2025-03-22 03:43:46.288 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.ChatApp - Application lancée avec succès.
+2025-03-22 03:43:56.709 [Thread-4] ERROR com.saadbarhrouj.server.TCPServer - Erreur lors de la communication avec le client.
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796) ~[?:?]
+	at java.base/java.net.Socket$SocketInputStream.implRead(Socket.java:1108) ~[?:?]
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1095) ~[?:?]
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350) ~[?:?]
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393) ~[?:?]
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217) ~[?:?]
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171) ~[?:?]
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:186) ~[?:?]
+	at java.base/java.io.BufferedReader.fill(BufferedReader.java:160) ~[?:?]
+	at java.base/java.io.BufferedReader.implReadLine(BufferedReader.java:370) ~[?:?]
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:347) ~[?:?]
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:436) ~[?:?]
+	at com.saadbarhrouj.server.TCPServer$ClientHandler.run(TCPServer.java:67) [classes/:?]
+2025-03-22 03:43:56.711 [Thread-4] INFO  com.saadbarhrouj.server.TCPServer - Connexion TCP avec /127.0.0.1 fermée.
+2025-03-22 03:43:59.378 [main] INFO  com.saadbarhrouj.server.TCPServer - Nouvelle connexion TCP acceptée depuis: /127.0.0.1
+2025-03-22 03:43:59.391 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.network.TCPClient - Connecté au serveur TCP : localhost:12345
+2025-03-22 03:44:00.542 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.ChatApp - Application lancée avec succès.
+2025-03-22 03:44:39.086 [Thread-5] INFO  com.saadbarhrouj.server.TCPServer - Reçu du client: REGISTER saad saad@gmail.com sssssssssssssssssssss
+2025-03-22 03:44:39.088 [Thread-5] WARN  com.saadbarhrouj.server.TCPServer - Requête d'inscription invalide reçue.
+2025-03-22 03:44:39.088 [JavaFX Application Thread] WARN  com.saadbarhrouj.client.network.TCPClient - Echec de l'inscription: INVALID_REQUEST
+2025-03-22 03:44:39.089 [JavaFX Application Thread] WARN  com.saadbarhrouj.client.controller.RegisterController - Echec de l'inscription pour l'utilisateur: saad@gmail.com
+2025-03-22 03:45:49.333 [Thread-5] ERROR com.saadbarhrouj.server.TCPServer - Erreur lors de la communication avec le client.
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796) ~[?:?]
+	at java.base/java.net.Socket$SocketInputStream.implRead(Socket.java:1108) ~[?:?]
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1095) ~[?:?]
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350) ~[?:?]
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393) ~[?:?]
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217) ~[?:?]
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171) ~[?:?]
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:186) ~[?:?]
+	at java.base/java.io.BufferedReader.fill(BufferedReader.java:160) ~[?:?]
+	at java.base/java.io.BufferedReader.implReadLine(BufferedReader.java:370) ~[?:?]
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:347) ~[?:?]
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:436) ~[?:?]
+	at com.saadbarhrouj.server.TCPServer$ClientHandler.run(TCPServer.java:67) [classes/:?]
+2025-03-22 03:45:49.335 [Thread-5] INFO  com.saadbarhrouj.server.TCPServer - Connexion TCP avec /127.0.0.1 fermée.
+2025-03-22 03:46:46.309 [main] INFO  com.saadbarhrouj.server.TCPServer - Serveur TCP démarré sur le port: 12345
+2025-03-22 03:46:56.771 [main] INFO  com.saadbarhrouj.server.TCPServer - Nouvelle connexion TCP acceptée depuis: /127.0.0.1
+2025-03-22 03:46:56.782 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.network.TCPClient - Connecté au serveur TCP : localhost:12345
+2025-03-22 03:46:57.959 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.ChatApp - Application lancée avec succès.
+2025-03-22 03:47:18.662 [Thread-0] INFO  com.saadbarhrouj.server.TCPServer - Reçu du client: REGISTER saad saad@gmail.com Saad2001
+2025-03-22 03:47:19.164 [Thread-0] DEBUG com.saadbarhrouj.server.database.DatabaseManager - Connexion à la base de données réussie.
+2025-03-22 03:47:19.236 [Thread-0] DEBUG com.saadbarhrouj.server.database.DatabaseManager - Connexion à la base de données réussie.
+2025-03-22 03:47:19.285 [Thread-0] INFO  com.saadbarhrouj.server.TCPServer - Inscription réussie pour l'utilisateur: saad@gmail.com
+2025-03-22 03:47:19.298 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.controller.RegisterController - Inscription réussie pour l'utilisateur: saad@gmail.com
+2025-03-22 03:47:45.058 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.network.TCPClient - Déconnexion du serveur TCP.
+2025-03-22 03:47:45.058 [Thread-0] INFO  com.saadbarhrouj.server.TCPServer - Connexion TCP avec /127.0.0.1 fermée.
+2025-03-22 03:52:21.563 [main] INFO  com.saadbarhrouj.server.TCPServer - Nouvelle connexion TCP acceptée depuis: /127.0.0.1
+2025-03-22 03:52:21.572 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.network.TCPClient - Connecté au serveur TCP : localhost:12345
+2025-03-22 03:52:22.779 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.ChatApp - Application lancée avec succès.
+2025-03-22 03:52:40.142 [Thread-1] INFO  com.saadbarhrouj.server.TCPServer - Reçu du client: LOGIN saad@gmail.com Saad2001
+2025-03-22 03:52:40.143 [Thread-1] WARN  com.saadbarhrouj.server.TCPServer - Requête de connexion invalide reçue.
+2025-03-22 03:52:40.144 [JavaFX Application Thread] WARN  com.saadbarhrouj.client.network.TCPClient - Echec de la connexion: INVALID_REQUEST
+2025-03-22 03:52:40.144 [JavaFX Application Thread] WARN  com.saadbarhrouj.client.controller.LoginController - Echec de la connexion pour l'utilisateur: saad@gmail.com
+2025-03-22 03:53:23.406 [Thread-1] INFO  com.saadbarhrouj.server.TCPServer - Reçu du client: REGISTER kaoutar kaoutar@gmail.com Saad2001
+2025-03-22 03:53:23.414 [Thread-1] DEBUG com.saadbarhrouj.server.database.DatabaseManager - Connexion à la base de données réussie.
+2025-03-22 03:53:23.434 [Thread-1] DEBUG com.saadbarhrouj.server.database.DatabaseManager - Connexion à la base de données réussie.
+2025-03-22 03:53:23.438 [Thread-1] INFO  com.saadbarhrouj.server.TCPServer - Inscription réussie pour l'utilisateur: kaoutar@gmail.com
+2025-03-22 03:53:23.453 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.controller.RegisterController - Inscription réussie pour l'utilisateur: kaoutar@gmail.com
+2025-03-22 03:53:38.678 [JavaFX Application Thread] ERROR com.saadbarhrouj.client.controller.LoginController - TCPClient non initialisé.
+2025-03-22 03:53:59.911 [main] INFO  com.saadbarhrouj.server.TCPServer - Serveur TCP démarré sur le port: 12345
+2025-03-22 03:54:14.839 [main] INFO  com.saadbarhrouj.server.TCPServer - Nouvelle connexion TCP acceptée depuis: /127.0.0.1
+2025-03-22 03:54:14.847 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.network.TCPClient - Connecté au serveur TCP : localhost:12345
+2025-03-22 03:54:15.963 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.ChatApp - Application lancée avec succès.
+2025-03-22 03:54:31.462 [Thread-0] INFO  com.saadbarhrouj.server.TCPServer - Reçu du client: LOGIN kaoutar@gmail.com Saad2001
+2025-03-22 03:54:31.463 [Thread-0] WARN  com.saadbarhrouj.server.TCPServer - Requête de connexion invalide reçue.
+2025-03-22 03:54:31.463 [JavaFX Application Thread] WARN  com.saadbarhrouj.client.network.TCPClient - Echec de la connexion: INVALID_REQUEST
+2025-03-22 03:54:31.464 [JavaFX Application Thread] WARN  com.saadbarhrouj.client.controller.LoginController - Echec de la connexion pour l'utilisateur: kaoutar@gmail.com
+2025-03-22 03:54:41.933 [Thread-0] INFO  com.saadbarhrouj.server.TCPServer - Reçu du client: LOGIN kaoutar@gmail.com Saad2001
+2025-03-22 03:54:41.934 [Thread-0] WARN  com.saadbarhrouj.server.TCPServer - Requête de connexion invalide reçue.
+2025-03-22 03:54:41.934 [JavaFX Application Thread] WARN  com.saadbarhrouj.client.network.TCPClient - Echec de la connexion: INVALID_REQUEST
+2025-03-22 03:54:41.934 [JavaFX Application Thread] WARN  com.saadbarhrouj.client.controller.LoginController - Echec de la connexion pour l'utilisateur: kaoutar@gmail.com
+2025-03-22 03:55:31.437 [Thread-0] INFO  com.saadbarhrouj.server.TCPServer - Reçu du client: LOGIN kaoutar@gmail.com Saad2001
+2025-03-22 03:55:31.438 [Thread-0] WARN  com.saadbarhrouj.server.TCPServer - Requête de connexion invalide reçue.
+2025-03-22 03:55:31.438 [JavaFX Application Thread] WARN  com.saadbarhrouj.client.network.TCPClient - Echec de la connexion: INVALID_REQUEST
+2025-03-22 03:55:31.438 [JavaFX Application Thread] WARN  com.saadbarhrouj.client.controller.LoginController - Echec de la connexion pour l'utilisateur: kaoutar@gmail.com
+2025-03-22 03:55:54.790 [Thread-0] INFO  com.saadbarhrouj.server.TCPServer - Reçu du client: REGISTER simo simo@gmail.com simo12345
+2025-03-22 03:55:55.047 [Thread-0] DEBUG com.saadbarhrouj.server.database.DatabaseManager - Connexion à la base de données réussie.
+2025-03-22 03:55:55.077 [Thread-0] DEBUG com.saadbarhrouj.server.database.DatabaseManager - Connexion à la base de données réussie.
+2025-03-22 03:55:55.100 [Thread-0] INFO  com.saadbarhrouj.server.TCPServer - Inscription réussie pour l'utilisateur: simo@gmail.com
+2025-03-22 03:55:55.108 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.controller.RegisterController - Inscription réussie pour l'utilisateur: simo@gmail.com
+2025-03-22 03:56:03.477 [JavaFX Application Thread] ERROR com.saadbarhrouj.client.controller.LoginController - TCPClient non initialisé.
+2025-03-22 03:59:44.961 [Thread-0] ERROR com.saadbarhrouj.server.TCPServer - Erreur lors de la communication avec le client.
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796) ~[?:?]
+	at java.base/java.net.Socket$SocketInputStream.implRead(Socket.java:1108) ~[?:?]
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1095) ~[?:?]
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350) ~[?:?]
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393) ~[?:?]
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217) ~[?:?]
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171) ~[?:?]
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:186) ~[?:?]
+	at java.base/java.io.BufferedReader.fill(BufferedReader.java:160) ~[?:?]
+	at java.base/java.io.BufferedReader.implReadLine(BufferedReader.java:370) ~[?:?]
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:347) ~[?:?]
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:436) ~[?:?]
+	at com.saadbarhrouj.server.TCPServer$ClientHandler.run(TCPServer.java:67) [classes/:?]
+2025-03-22 03:59:45.013 [Thread-0] INFO  com.saadbarhrouj.server.TCPServer - Connexion TCP avec /127.0.0.1 fermée.
+2025-03-22 03:59:49.524 [main] INFO  com.saadbarhrouj.server.TCPServer - Nouvelle connexion TCP acceptée depuis: /127.0.0.1
+2025-03-22 03:59:49.532 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.network.TCPClient - Connecté au serveur TCP : localhost:12345
+2025-03-22 03:59:50.687 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.ChatApp - Application lancée avec succès.
+2025-03-22 04:00:01.702 [Thread-1] INFO  com.saadbarhrouj.server.TCPServer - Reçu du client: LOGIN simo@gmail.com simo12345
+2025-03-22 04:00:01.703 [Thread-1] WARN  com.saadbarhrouj.server.TCPServer - Requête de connexion invalide reçue.
+2025-03-22 04:00:01.703 [JavaFX Application Thread] WARN  com.saadbarhrouj.client.network.TCPClient - Echec de la connexion: INVALID_REQUEST
+2025-03-22 04:00:01.704 [JavaFX Application Thread] WARN  com.saadbarhrouj.client.controller.LoginController - Echec de la connexion pour l'utilisateur: simo@gmail.com
+2025-03-22 04:00:38.069 [Thread-1] INFO  com.saadbarhrouj.server.TCPServer - Reçu du client: REGISTER simo@gmail.com simo@gmail.com simo12345
+2025-03-22 04:00:38.077 [Thread-1] DEBUG com.saadbarhrouj.server.database.DatabaseManager - Connexion à la base de données réussie.
+2025-03-22 04:00:38.188 [Thread-1] ERROR com.saadbarhrouj.server.database.UserDAO - Erreur lors de la création de l'utilisateur.
+java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'simo@gmail.com' for key 'email'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.saadbarhrouj.server.database.UserDAO.createUser(UserDAO.java:29) [classes/:?]
+	at com.saadbarhrouj.server.TCPServer$ClientHandler.processInput(TCPServer.java:95) [classes/:?]
+	at com.saadbarhrouj.server.TCPServer$ClientHandler.run(TCPServer.java:69) [classes/:?]
+2025-03-22 04:00:38.189 [Thread-1] ERROR com.saadbarhrouj.server.TCPServer - Erreur lors de l'accès à la base de données.
+java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'simo@gmail.com' for key 'email'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988) ~[mysql-connector-j-8.3.0.jar:8.3.0]
+	at com.saadbarhrouj.server.database.UserDAO.createUser(UserDAO.java:29) ~[classes/:?]
+	at com.saadbarhrouj.server.TCPServer$ClientHandler.processInput(TCPServer.java:95) [classes/:?]
+	at com.saadbarhrouj.server.TCPServer$ClientHandler.run(TCPServer.java:69) [classes/:?]
+2025-03-22 04:00:38.191 [JavaFX Application Thread] WARN  com.saadbarhrouj.client.network.TCPClient - Echec de l'inscription: REGISTER_FAILED
+2025-03-22 04:00:38.191 [JavaFX Application Thread] WARN  com.saadbarhrouj.client.controller.RegisterController - Echec de l'inscription pour l'utilisateur: simo@gmail.com
+2025-03-22 04:00:51.452 [Thread-1] INFO  com.saadbarhrouj.server.TCPServer - Reçu du client: REGISTER simo@gmail.com simo1@gmail.com simo12345
+2025-03-22 04:00:51.458 [Thread-1] DEBUG com.saadbarhrouj.server.database.DatabaseManager - Connexion à la base de données réussie.
+2025-03-22 04:00:51.476 [Thread-1] DEBUG com.saadbarhrouj.server.database.DatabaseManager - Connexion à la base de données réussie.
+2025-03-22 04:00:51.481 [Thread-1] INFO  com.saadbarhrouj.server.TCPServer - Inscription réussie pour l'utilisateur: simo1@gmail.com
+2025-03-22 04:00:51.499 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.controller.RegisterController - Inscription réussie pour l'utilisateur: simo1@gmail.com
+2025-03-22 04:01:05.140 [JavaFX Application Thread] ERROR com.saadbarhrouj.client.controller.LoginController - TCPClient non initialisé.
+2025-03-22 08:29:38.490 [JavaFX Application Thread] ERROR com.saadbarhrouj.client.network.TCPClient - Erreur lors de la connexion au serveur TCP.
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.connect(Net.java:589) ~[?:?]
+	at java.base/sun.nio.ch.Net.connect(Net.java:578) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583) ~[?:?]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:752) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:687) ~[?:?]
+	at java.base/java.net.Socket.<init>(Socket.java:556) ~[?:?]
+	at java.base/java.net.Socket.<init>(Socket.java:325) ~[?:?]
+	at com.saadbarhrouj.client.network.TCPClient.startConnection(TCPClient.java:33) ~[classes/:?]
+	at com.saadbarhrouj.client.ChatApp.start(ChatApp.java:27) ~[classes/:?]
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$9(LauncherImpl.java:839) ~[javafx.graphics.jar:?]
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runAndWait$12(PlatformImpl.java:483) ~[javafx.graphics.jar:?]
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:456) ~[javafx.graphics.jar:?]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400) ~[?:?]
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:455) ~[javafx.graphics.jar:?]
+	at javafx.graphics/com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:95) ~[javafx.graphics.jar:?]
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication._runLoop(Native Method) ~[javafx.graphics.jar:?]
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:184) ~[javafx.graphics.jar:?]
+	at java.base/java.lang.Thread.run(Thread.java:1570) [?:?]
+2025-03-22 08:29:38.530 [JavaFX Application Thread] ERROR com.saadbarhrouj.client.ChatApp - Erreur lors du chargement de l'interface graphique.
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.connect(Net.java:589) ~[?:?]
+	at java.base/sun.nio.ch.Net.connect(Net.java:578) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583) ~[?:?]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:752) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:687) ~[?:?]
+	at java.base/java.net.Socket.<init>(Socket.java:556) ~[?:?]
+	at java.base/java.net.Socket.<init>(Socket.java:325) ~[?:?]
+	at com.saadbarhrouj.client.network.TCPClient.startConnection(TCPClient.java:33) ~[classes/:?]
+	at com.saadbarhrouj.client.ChatApp.start(ChatApp.java:27) ~[classes/:?]
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$9(LauncherImpl.java:839) ~[javafx.graphics.jar:?]
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runAndWait$12(PlatformImpl.java:483) ~[javafx.graphics.jar:?]
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:456) ~[javafx.graphics.jar:?]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400) ~[?:?]
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:455) ~[javafx.graphics.jar:?]
+	at javafx.graphics/com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:95) ~[javafx.graphics.jar:?]
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication._runLoop(Native Method) ~[javafx.graphics.jar:?]
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:184) ~[javafx.graphics.jar:?]
+	at java.base/java.lang.Thread.run(Thread.java:1570) [?:?]
+2025-03-22 08:29:42.991 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.network.TCPClient - Déconnexion du serveur TCP.
+2025-03-22 08:29:52.771 [JavaFX Application Thread] ERROR com.saadbarhrouj.client.network.TCPClient - Erreur lors de la connexion au serveur TCP.
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.connect(Net.java:589) ~[?:?]
+	at java.base/sun.nio.ch.Net.connect(Net.java:578) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583) ~[?:?]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:752) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:687) ~[?:?]
+	at java.base/java.net.Socket.<init>(Socket.java:556) ~[?:?]
+	at java.base/java.net.Socket.<init>(Socket.java:325) ~[?:?]
+	at com.saadbarhrouj.client.network.TCPClient.startConnection(TCPClient.java:33) ~[classes/:?]
+	at com.saadbarhrouj.client.ChatApp.start(ChatApp.java:27) ~[classes/:?]
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$9(LauncherImpl.java:839) ~[javafx.graphics.jar:?]
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runAndWait$12(PlatformImpl.java:483) ~[javafx.graphics.jar:?]
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:456) ~[javafx.graphics.jar:?]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400) ~[?:?]
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:455) ~[javafx.graphics.jar:?]
+	at javafx.graphics/com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:95) ~[javafx.graphics.jar:?]
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication._runLoop(Native Method) ~[javafx.graphics.jar:?]
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:184) ~[javafx.graphics.jar:?]
+	at java.base/java.lang.Thread.run(Thread.java:1570) [?:?]
+2025-03-22 08:29:52.797 [JavaFX Application Thread] ERROR com.saadbarhrouj.client.ChatApp - Erreur lors du chargement de l'interface graphique.
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.connect(Net.java:589) ~[?:?]
+	at java.base/sun.nio.ch.Net.connect(Net.java:578) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583) ~[?:?]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:752) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:687) ~[?:?]
+	at java.base/java.net.Socket.<init>(Socket.java:556) ~[?:?]
+	at java.base/java.net.Socket.<init>(Socket.java:325) ~[?:?]
+	at com.saadbarhrouj.client.network.TCPClient.startConnection(TCPClient.java:33) ~[classes/:?]
+	at com.saadbarhrouj.client.ChatApp.start(ChatApp.java:27) ~[classes/:?]
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$9(LauncherImpl.java:839) ~[javafx.graphics.jar:?]
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runAndWait$12(PlatformImpl.java:483) ~[javafx.graphics.jar:?]
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:456) ~[javafx.graphics.jar:?]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400) ~[?:?]
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:455) ~[javafx.graphics.jar:?]
+	at javafx.graphics/com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:95) ~[javafx.graphics.jar:?]
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication._runLoop(Native Method) ~[javafx.graphics.jar:?]
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:184) ~[javafx.graphics.jar:?]
+	at java.base/java.lang.Thread.run(Thread.java:1570) [?:?]
+2025-03-22 08:29:55.916 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.network.TCPClient - Déconnexion du serveur TCP.
+2025-03-22 08:30:02.082 [main] INFO  com.saadbarhrouj.server.TCPServer - Serveur TCP démarré sur le port: 12345
+2025-03-22 08:30:26.205 [main] INFO  com.saadbarhrouj.server.TCPServer - Nouvelle connexion TCP acceptée depuis: /127.0.0.1
+2025-03-22 08:30:26.214 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.network.TCPClient - Connecté au serveur TCP : localhost:12345
+2025-03-22 08:30:27.369 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.ChatApp - Application lancée avec succès.
+2025-03-22 08:30:30.935 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.network.TCPClient - Déconnexion du serveur TCP.
+2025-03-22 08:30:30.936 [Thread-0] INFO  com.saadbarhrouj.server.TCPServer - Connexion TCP avec /127.0.0.1 fermée.
+2025-03-22 08:33:36.472 [main] INFO  com.saadbarhrouj.server.TCPServer - Nouvelle connexion TCP acceptée depuis: /127.0.0.1
+2025-03-22 08:33:36.481 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.network.TCPClient - Connecté au serveur TCP : localhost:12345
+2025-03-22 08:33:37.556 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.ChatApp - Application lancée avec succès.
+2025-03-22 08:33:50.600 [Thread-1] INFO  com.saadbarhrouj.server.TCPServer - Reçu du client: LOGIN saas@gmail.com Saad2001
+2025-03-22 08:33:50.602 [Thread-1] WARN  com.saadbarhrouj.server.TCPServer - Requête de connexion invalide reçue.
+2025-03-22 08:33:50.602 [JavaFX Application Thread] WARN  com.saadbarhrouj.client.network.TCPClient - Echec de la connexion: INVALID_REQUEST
+2025-03-22 08:33:50.602 [JavaFX Application Thread] WARN  com.saadbarhrouj.client.controller.LoginController - Echec de la connexion pour l'utilisateur: saas@gmail.com
+2025-03-22 08:33:54.539 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.network.TCPClient - Déconnexion du serveur TCP.
+2025-03-22 08:33:54.540 [Thread-1] INFO  com.saadbarhrouj.server.TCPServer - Connexion TCP avec /127.0.0.1 fermée.
+2025-03-22 08:40:42.366 [JavaFX Application Thread] ERROR com.saadbarhrouj.client.network.TCPClient - Erreur lors de la connexion au serveur TCP.
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.connect(Net.java:589) ~[?:?]
+	at java.base/sun.nio.ch.Net.connect(Net.java:578) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583) ~[?:?]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:752) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:687) ~[?:?]
+	at java.base/java.net.Socket.<init>(Socket.java:556) ~[?:?]
+	at java.base/java.net.Socket.<init>(Socket.java:325) ~[?:?]
+	at com.saadbarhrouj.client.network.TCPClient.startConnection(TCPClient.java:33) ~[classes/:?]
+	at com.saadbarhrouj.client.ChatApp.start(ChatApp.java:27) ~[classes/:?]
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$9(LauncherImpl.java:839) ~[javafx.graphics.jar:?]
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runAndWait$12(PlatformImpl.java:483) ~[javafx.graphics.jar:?]
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:456) ~[javafx.graphics.jar:?]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400) ~[?:?]
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:455) ~[javafx.graphics.jar:?]
+	at javafx.graphics/com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:95) ~[javafx.graphics.jar:?]
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication._runLoop(Native Method) ~[javafx.graphics.jar:?]
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:184) ~[javafx.graphics.jar:?]
+	at java.base/java.lang.Thread.run(Thread.java:1570) [?:?]
+2025-03-22 08:40:42.382 [JavaFX Application Thread] ERROR com.saadbarhrouj.client.ChatApp - Erreur lors du chargement de l'interface graphique.
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.connect(Net.java:589) ~[?:?]
+	at java.base/sun.nio.ch.Net.connect(Net.java:578) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583) ~[?:?]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:752) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:687) ~[?:?]
+	at java.base/java.net.Socket.<init>(Socket.java:556) ~[?:?]
+	at java.base/java.net.Socket.<init>(Socket.java:325) ~[?:?]
+	at com.saadbarhrouj.client.network.TCPClient.startConnection(TCPClient.java:33) ~[classes/:?]
+	at com.saadbarhrouj.client.ChatApp.start(ChatApp.java:27) ~[classes/:?]
+	at javafx.graphics/com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$9(LauncherImpl.java:839) ~[javafx.graphics.jar:?]
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runAndWait$12(PlatformImpl.java:483) ~[javafx.graphics.jar:?]
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:456) ~[javafx.graphics.jar:?]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400) ~[?:?]
+	at javafx.graphics/com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:455) ~[javafx.graphics.jar:?]
+	at javafx.graphics/com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:95) ~[javafx.graphics.jar:?]
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication._runLoop(Native Method) ~[javafx.graphics.jar:?]
+	at javafx.graphics/com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:184) ~[javafx.graphics.jar:?]
+	at java.base/java.lang.Thread.run(Thread.java:1570) [?:?]
+2025-03-22 08:40:44.774 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.network.TCPClient - Déconnexion du serveur TCP.
+2025-03-22 08:47:50.954 [main] INFO  com.saadbarhrouj.server.TCPServer - Serveur TCP démarré sur le port: 12345
+2025-03-22 08:47:56.524 [main] INFO  com.saadbarhrouj.server.TCPServer - Nouvelle connexion TCP acceptée depuis: /127.0.0.1
+2025-03-22 08:47:56.532 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.network.TCPClient - Connecté au serveur TCP : localhost:12345
+2025-03-22 08:47:57.392 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.ChatApp - Application lancée avec succès.
+2025-03-22 08:48:21.278 [Thread-0] INFO  com.saadbarhrouj.server.TCPServer - Reçu du client: REGISTER saad nv@gmail.com nv@gmail.com
+2025-03-22 08:48:21.279 [Thread-0] WARN  com.saadbarhrouj.server.TCPServer - Requête d'inscription invalide reçue.
+2025-03-22 08:48:21.281 [JavaFX Application Thread] WARN  com.saadbarhrouj.client.network.TCPClient - Echec de l'inscription: INVALID_REQUEST
+2025-03-22 08:48:21.281 [JavaFX Application Thread] WARN  com.saadbarhrouj.client.controller.RegisterController - Echec de l'inscription pour l'utilisateur: nv@gmail.com
+2025-03-22 08:48:39.766 [Thread-0] INFO  com.saadbarhrouj.server.TCPServer - Reçu du client: REGISTER saad nv@gmail.com saad1234
+2025-03-22 08:48:39.767 [Thread-0] WARN  com.saadbarhrouj.server.TCPServer - Requête d'inscription invalide reçue.
+2025-03-22 08:48:39.767 [JavaFX Application Thread] WARN  com.saadbarhrouj.client.network.TCPClient - Echec de l'inscription: INVALID_REQUEST
+2025-03-22 08:48:39.767 [JavaFX Application Thread] WARN  com.saadbarhrouj.client.controller.RegisterController - Echec de l'inscription pour l'utilisateur: nv@gmail.com
+2025-03-22 08:48:53.502 [Thread-0] INFO  com.saadbarhrouj.server.TCPServer - Reçu du client: REGISTER saad nv@gmail.com Saad2001
+2025-03-22 08:48:53.502 [Thread-0] WARN  com.saadbarhrouj.server.TCPServer - Requête d'inscription invalide reçue.
+2025-03-22 08:48:53.502 [JavaFX Application Thread] WARN  com.saadbarhrouj.client.network.TCPClient - Echec de l'inscription: INVALID_REQUEST
+2025-03-22 08:48:53.502 [JavaFX Application Thread] WARN  com.saadbarhrouj.client.controller.RegisterController - Echec de l'inscription pour l'utilisateur: nv@gmail.com
+2025-03-22 08:48:59.069 [Thread-0] INFO  com.saadbarhrouj.server.TCPServer - Reçu du client: REGISTER saad nv@gmail.com Saad20012001
+2025-03-22 08:48:59.070 [Thread-0] WARN  com.saadbarhrouj.server.TCPServer - Requête d'inscription invalide reçue.
+2025-03-22 08:48:59.070 [JavaFX Application Thread] WARN  com.saadbarhrouj.client.network.TCPClient - Echec de l'inscription: INVALID_REQUEST
+2025-03-22 08:48:59.070 [JavaFX Application Thread] WARN  com.saadbarhrouj.client.controller.RegisterController - Echec de l'inscription pour l'utilisateur: nv@gmail.com
+2025-03-22 08:50:33.701 [Thread-0] INFO  com.saadbarhrouj.server.TCPServer - Reçu du client: REGISTER saad saadd@gmail.com saad12345
+2025-03-22 08:50:33.702 [Thread-0] WARN  com.saadbarhrouj.server.TCPServer - Requête d'inscription invalide reçue.
+2025-03-22 08:50:33.702 [JavaFX Application Thread] WARN  com.saadbarhrouj.client.network.TCPClient - Echec de l'inscription: INVALID_REQUEST
+2025-03-22 08:50:33.703 [JavaFX Application Thread] WARN  com.saadbarhrouj.client.controller.RegisterController - Echec de l'inscription pour l'utilisateur: saadd@gmail.com
+2025-03-22 08:51:45.859 [Thread-0] ERROR com.saadbarhrouj.server.TCPServer - Erreur lors de la communication avec le client.
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796) ~[?:?]
+	at java.base/java.net.Socket$SocketInputStream.implRead(Socket.java:1108) ~[?:?]
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1095) ~[?:?]
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350) ~[?:?]
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393) ~[?:?]
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217) ~[?:?]
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171) ~[?:?]
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:186) ~[?:?]
+	at java.base/java.io.BufferedReader.fill(BufferedReader.java:160) ~[?:?]
+	at java.base/java.io.BufferedReader.implReadLine(BufferedReader.java:370) ~[?:?]
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:347) ~[?:?]
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:436) ~[?:?]
+	at com.saadbarhrouj.server.TCPServer$ClientHandler.run(TCPServer.java:67) [classes/:?]
+2025-03-22 08:51:45.882 [Thread-0] INFO  com.saadbarhrouj.server.TCPServer - Connexion TCP avec /127.0.0.1 fermée.
+2025-03-22 08:51:49.177 [main] INFO  com.saadbarhrouj.server.TCPServer - Nouvelle connexion TCP acceptée depuis: /127.0.0.1
+2025-03-22 08:51:49.182 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.network.TCPClient - Connecté au serveur TCP : localhost:12345
+2025-03-22 08:51:49.892 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.ChatApp - Application lancée avec succès.
+2025-03-22 08:52:05.421 [Thread-1] ERROR com.saadbarhrouj.server.TCPServer - Erreur lors de la communication avec le client.
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796) ~[?:?]
+	at java.base/java.net.Socket$SocketInputStream.implRead(Socket.java:1108) ~[?:?]
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1095) ~[?:?]
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350) ~[?:?]
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393) ~[?:?]
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217) ~[?:?]
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171) ~[?:?]
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:186) ~[?:?]
+	at java.base/java.io.BufferedReader.fill(BufferedReader.java:160) ~[?:?]
+	at java.base/java.io.BufferedReader.implReadLine(BufferedReader.java:370) ~[?:?]
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:347) ~[?:?]
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:436) ~[?:?]
+	at com.saadbarhrouj.server.TCPServer$ClientHandler.run(TCPServer.java:67) [classes/:?]
+2025-03-22 08:52:05.422 [Thread-1] INFO  com.saadbarhrouj.server.TCPServer - Connexion TCP avec /127.0.0.1 fermée.
+2025-03-22 08:52:07.162 [main] INFO  com.saadbarhrouj.server.TCPServer - Nouvelle connexion TCP acceptée depuis: /127.0.0.1
+2025-03-22 08:52:07.167 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.network.TCPClient - Connecté au serveur TCP : localhost:12345
+2025-03-22 08:52:07.937 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.ChatApp - Application lancée avec succès.
+2025-03-22 08:52:10.469 [main] INFO  com.saadbarhrouj.server.TCPServer - Serveur TCP démarré sur le port: 12345
+2025-03-22 08:52:16.846 [main] INFO  com.saadbarhrouj.server.TCPServer - Nouvelle connexion TCP acceptée depuis: /127.0.0.1
+2025-03-22 08:52:16.851 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.network.TCPClient - Connecté au serveur TCP : localhost:12345
+2025-03-22 08:52:17.617 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.ChatApp - Application lancée avec succès.
+2025-03-22 08:52:42.486 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.controller.RegisterController - Nom: saaad
+2025-03-22 08:52:42.487 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.controller.RegisterController - Email: saaad@gmail.com
+2025-03-22 08:52:42.487 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.controller.RegisterController - Mot de passe: saad12345
+2025-03-22 08:52:42.488 [Thread-0] INFO  com.saadbarhrouj.server.TCPServer - Reçu du client: REGISTER saaad saaad@gmail.com saad12345
+2025-03-22 08:52:42.489 [Thread-0] WARN  com.saadbarhrouj.server.TCPServer - Requête d'inscription invalide reçue.
+2025-03-22 08:52:42.489 [JavaFX Application Thread] WARN  com.saadbarhrouj.client.network.TCPClient - Echec de l'inscription: INVALID_REQUEST
+2025-03-22 08:52:42.490 [JavaFX Application Thread] WARN  com.saadbarhrouj.client.controller.RegisterController - Echec de l'inscription pour l'utilisateur: saaad@gmail.com
+2025-03-22 08:55:56.301 [main] INFO  com.saadbarhrouj.server.TCPServer - Serveur TCP démarré sur le port: 12345
+2025-03-22 08:56:10.270 [main] INFO  com.saadbarhrouj.server.TCPServer - Nouvelle connexion TCP acceptée depuis: /127.0.0.1
+2025-03-22 08:56:10.279 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.network.TCPClient - Connecté au serveur TCP : localhost:12345
+2025-03-22 08:56:11.567 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.ChatApp - Application lancée avec succès.
+2025-03-22 08:56:31.662 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.controller.RegisterController - Nom: saida
+2025-03-22 08:56:31.662 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.controller.RegisterController - Email: saida@gmail.com
+2025-03-22 08:56:31.662 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.controller.RegisterController - Mot de passe: saida2001
+2025-03-22 08:56:31.664 [Thread-0] INFO  com.saadbarhrouj.server.TCPServer - Reçu du client: REGISTER saida saida@gmail.com saida2001
+2025-03-22 08:56:32.146 [Thread-0] DEBUG com.saadbarhrouj.server.database.DatabaseManager - Connexion à la base de données réussie.
+2025-03-22 08:56:32.209 [Thread-0] DEBUG com.saadbarhrouj.server.database.DatabaseManager - Connexion à la base de données réussie.
+2025-03-22 08:56:32.262 [Thread-0] INFO  com.saadbarhrouj.server.TCPServer - Inscription réussie pour l'utilisateur: saida@gmail.com
+2025-03-22 08:56:32.275 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.controller.RegisterController - Inscription réussie pour l'utilisateur: saida@gmail.com
+2025-03-22 08:56:49.221 [JavaFX Application Thread] ERROR com.saadbarhrouj.client.controller.LoginController - TCPClient non initialisé.
+2025-03-22 08:59:32.162 [main] INFO  com.saadbarhrouj.server.TCPServer - Serveur TCP démarré sur le port: 12345
+2025-03-22 08:59:37.564 [main] INFO  com.saadbarhrouj.server.TCPServer - Nouvelle connexion TCP acceptée depuis: /127.0.0.1
+2025-03-22 08:59:37.579 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.network.TCPClient - Connecté au serveur TCP : localhost:12345
+2025-03-22 08:59:38.289 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.controller.LoginController - TCPClient défini dans LoginController : com.saadbarhrouj.client.network.TCPClient@65f41a8
+2025-03-22 08:59:38.738 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.ChatApp - Application lancée avec succès.
+2025-03-22 08:59:55.638 [Thread-0] INFO  com.saadbarhrouj.server.TCPServer - Reçu du client: LOGIN saida@gmail.com saida2001
+2025-03-22 08:59:56.084 [Thread-0] DEBUG com.saadbarhrouj.server.database.DatabaseManager - Connexion à la base de données réussie.
+2025-03-22 08:59:56.172 [Thread-0] INFO  com.saadbarhrouj.server.database.UserDAO - Utilisateur validé: saida@gmail.com
+2025-03-22 08:59:56.214 [Thread-0] INFO  com.saadbarhrouj.server.TCPServer - Connexion réussie pour l'utilisateur: saida@gmail.com
+2025-03-22 08:59:56.233 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.controller.LoginController - Connexion réussie pour l'utilisateur: saida@gmail.com
+2025-03-22 09:08:02.875 [main] INFO  com.saadbarhrouj.server.TCPServer - Serveur TCP démarré sur le port: 12345
+2025-03-22 09:08:11.304 [main] INFO  com.saadbarhrouj.server.TCPServer - Nouvelle connexion TCP acceptée depuis: /127.0.0.1
+2025-03-22 09:08:11.312 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.network.TCPClient - Connecté au serveur TCP : localhost:12345
+2025-03-22 09:08:12.079 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.controller.LoginController - TCPClient défini dans LoginController : com.saadbarhrouj.client.network.TCPClient@1fda2c4e
+2025-03-22 09:08:12.777 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.ChatApp - Application lancée avec succès.
+2025-03-22 09:08:29.270 [Thread-0] INFO  com.saadbarhrouj.server.TCPServer - Reçu du client: LOGIN saida@gmail.com saida2001
+2025-03-22 09:08:29.768 [Thread-0] DEBUG com.saadbarhrouj.server.database.DatabaseManager - Connexion à la base de données réussie.
+2025-03-22 09:08:29.856 [Thread-0] INFO  com.saadbarhrouj.server.database.UserDAO - Utilisateur validé: saida@gmail.com
+2025-03-22 09:08:29.905 [Thread-0] INFO  com.saadbarhrouj.server.TCPServer - Connexion réussie pour l'utilisateur: saida@gmail.com
+2025-03-22 09:08:29.924 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.controller.LoginController - Connexion réussie pour l'utilisateur: saida@gmail.com
+2025-03-22 09:08:29.962 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.controller.ChatViewController - ChatViewController initialisé.
+2025-03-22 09:08:29.963 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.controller.ChatViewController - ChatViewController: Utilisateur défini : saida@gmail.com
+2025-03-22 09:20:59.733 [main] INFO  com.saadbarhrouj.server.TCPServer - Serveur TCP démarré sur le port: 12345
+2025-03-22 09:21:05.576 [main] INFO  com.saadbarhrouj.server.TCPServer - Serveur TCP démarré sur le port: 12345
+2025-03-22 09:21:10.192 [main] INFO  com.saadbarhrouj.server.TCPServer - Nouvelle connexion TCP acceptée depuis: /127.0.0.1
+2025-03-22 09:21:10.202 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.network.TCPClient - Connecté au serveur TCP : localhost:12345
+2025-03-22 09:21:11.087 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.controller.LoginController - TCPClient défini dans LoginController : com.saadbarhrouj.client.network.TCPClient@6778b9f1
+2025-03-22 09:21:11.663 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.ChatApp - Application lancée avec succès.
+2025-03-22 09:21:24.909 [Thread-0] INFO  com.saadbarhrouj.server.TCPServer - Reçu du client: LOGIN saida@gmail.com saida2001
+2025-03-22 09:21:25.335 [Thread-0] DEBUG com.saadbarhrouj.server.database.DatabaseManager - Connexion à la base de données réussie.
+2025-03-22 09:21:25.434 [Thread-0] INFO  com.saadbarhrouj.server.database.UserDAO - Utilisateur validé: saida@gmail.com
+2025-03-22 09:21:25.480 [Thread-0] INFO  com.saadbarhrouj.server.TCPServer - Connexion réussie pour l'utilisateur: saida@gmail.com
+2025-03-22 09:21:25.499 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.controller.LoginController - Connexion réussie pour l'utilisateur: saida@gmail.com
+2025-03-22 09:21:25.550 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.controller.ChatViewController - ChatViewController initialisé.
+2025-03-22 09:21:25.564 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.controller.ChatViewController - Socket UDP Créé
+2025-03-22 09:21:25.567 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.controller.ChatViewController - ChatViewController: Utilisateur défini : saida@gmail.com
+2025-03-22 09:21:32.423 [Thread-0] ERROR com.saadbarhrouj.server.TCPServer - Erreur lors de la communication avec le client.
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796) ~[?:?]
+	at java.base/java.net.Socket$SocketInputStream.implRead(Socket.java:1108) ~[?:?]
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1095) ~[?:?]
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350) ~[?:?]
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393) ~[?:?]
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217) ~[?:?]
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171) ~[?:?]
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:186) ~[?:?]
+	at java.base/java.io.BufferedReader.fill(BufferedReader.java:160) ~[?:?]
+	at java.base/java.io.BufferedReader.implReadLine(BufferedReader.java:370) ~[?:?]
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:347) ~[?:?]
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:436) ~[?:?]
+	at com.saadbarhrouj.server.TCPServer$ClientHandler.run(TCPServer.java:67) [classes/:?]
+2025-03-22 09:21:32.474 [Thread-0] INFO  com.saadbarhrouj.server.TCPServer - Connexion TCP avec /127.0.0.1 fermée.
+2025-03-22 09:21:35.247 [main] INFO  com.saadbarhrouj.server.TCPServer - Nouvelle connexion TCP acceptée depuis: /127.0.0.1
+2025-03-22 09:21:35.257 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.network.TCPClient - Connecté au serveur TCP : localhost:12345
+2025-03-22 09:21:35.920 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.controller.LoginController - TCPClient défini dans LoginController : com.saadbarhrouj.client.network.TCPClient@69069f76
+2025-03-22 09:21:36.341 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.ChatApp - Application lancée avec succès.
+2025-03-22 09:21:54.491 [Thread-1] ERROR com.saadbarhrouj.server.TCPServer - Erreur lors de la communication avec le client.
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796) ~[?:?]
+	at java.base/java.net.Socket$SocketInputStream.implRead(Socket.java:1108) ~[?:?]
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1095) ~[?:?]
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350) ~[?:?]
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393) ~[?:?]
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217) ~[?:?]
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171) ~[?:?]
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:186) ~[?:?]
+	at java.base/java.io.BufferedReader.fill(BufferedReader.java:160) ~[?:?]
+	at java.base/java.io.BufferedReader.implReadLine(BufferedReader.java:370) ~[?:?]
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:347) ~[?:?]
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:436) ~[?:?]
+	at com.saadbarhrouj.server.TCPServer$ClientHandler.run(TCPServer.java:67) [classes/:?]
+2025-03-22 09:21:54.495 [Thread-1] INFO  com.saadbarhrouj.server.TCPServer - Connexion TCP avec /127.0.0.1 fermée.
+2025-03-22 09:21:59.466 [main] INFO  com.saadbarhrouj.server.TCPServer - Nouvelle connexion TCP acceptée depuis: /127.0.0.1
+2025-03-22 09:21:59.494 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.network.TCPClient - Connecté au serveur TCP : localhost:12345
+2025-03-22 09:22:00.390 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.controller.LoginController - TCPClient défini dans LoginController : com.saadbarhrouj.client.network.TCPClient@2f1edb0
+2025-03-22 09:22:01.190 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.ChatApp - Application lancée avec succès.
+2025-03-22 09:23:25.862 [Thread-2] INFO  com.saadbarhrouj.server.TCPServer - Reçu du client: LOGIN saida@gmail.com saida2001
+2025-03-22 09:23:25.882 [Thread-2] DEBUG com.saadbarhrouj.server.database.DatabaseManager - Connexion à la base de données réussie.
+2025-03-22 09:23:25.885 [Thread-2] INFO  com.saadbarhrouj.server.database.UserDAO - Utilisateur validé: saida@gmail.com
+2025-03-22 09:23:25.887 [Thread-2] INFO  com.saadbarhrouj.server.TCPServer - Connexion réussie pour l'utilisateur: saida@gmail.com
+2025-03-22 09:23:25.915 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.controller.LoginController - Connexion réussie pour l'utilisateur: saida@gmail.com
+2025-03-22 09:23:25.958 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.controller.ChatViewController - ChatViewController initialisé.
+2025-03-22 09:23:25.968 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.controller.ChatViewController - Socket UDP Créé
+2025-03-22 09:23:25.970 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.controller.ChatViewController - ChatViewController: Utilisateur défini : saida@gmail.com
+2025-03-22 09:25:48.408 [main] INFO  com.saadbarhrouj.server.TCPServer - Nouvelle connexion TCP acceptée depuis: /0:0:0:0:0:0:0:1
+2025-03-22 09:25:53.007 [Thread-3] INFO  com.saadbarhrouj.server.TCPServer - Reçu du client: hi
+2025-03-22 09:25:53.014 [Thread-3] WARN  com.saadbarhrouj.server.TCPServer - Commande inconnue reçue: hi
+2025-03-22 09:25:54.135 [Thread-3] INFO  com.saadbarhrouj.server.TCPServer - Reçu du client: 
+2025-03-22 09:25:54.143 [Thread-3] WARN  com.saadbarhrouj.server.TCPServer - Commande inconnue reçue: 
+2025-03-22 09:25:57.433 [Thread-3] INFO  com.saadbarhrouj.server.TCPServer - Reçu du client: hi
+2025-03-22 09:25:57.434 [Thread-3] WARN  com.saadbarhrouj.server.TCPServer - Commande inconnue reçue: hi
+2025-03-22 09:26:10.524 [Thread-3] INFO  com.saadbarhrouj.server.TCPServer - Reçu du client: LOGIN
+2025-03-22 09:26:10.526 [Thread-3] WARN  com.saadbarhrouj.server.TCPServer - Requête de connexion invalide reçue.
+2025-03-22 09:26:14.366 [Thread-3] INFO  com.saadbarhrouj.server.TCPServer - Reçu du client: LOGGIN
+2025-03-22 09:26:14.366 [Thread-3] WARN  com.saadbarhrouj.server.TCPServer - Commande inconnue reçue: LOGGIN
+2025-03-22 09:26:20.766 [Thread-3] INFO  com.saadbarhrouj.server.TCPServer - Reçu du client: REGISTER
+2025-03-22 09:26:20.766 [Thread-3] WARN  com.saadbarhrouj.server.TCPServer - Requête d'inscription invalide reçue.
+2025-03-22 09:36:53.437 [Thread-3] INFO  com.saadbarhrouj.server.TCPServer - Reçu du client: LOGIN saida@gmail.com saida2001
+2025-03-22 09:36:53.457 [Thread-3] DEBUG com.saadbarhrouj.server.database.DatabaseManager - Connexion à la base de données réussie.
+2025-03-22 09:36:53.460 [Thread-3] INFO  com.saadbarhrouj.server.database.UserDAO - Utilisateur validé: saida@gmail.com
+2025-03-22 09:36:53.462 [Thread-3] INFO  com.saadbarhrouj.server.TCPServer - Connexion réussie pour l'utilisateur: saida@gmail.com
+2025-03-22 09:37:03.599 [Thread-3] INFO  com.saadbarhrouj.server.TCPServer - Reçu du client: hiii
+2025-03-22 09:37:03.599 [Thread-3] WARN  com.saadbarhrouj.server.TCPServer - Commande inconnue reçue: hiii
+2025-03-22 09:37:16.352 [Thread-3] INFO  com.saadbarhrouj.server.TCPServer - Reçu du client: SEND_MESSAGE Hello from Telnet!
+2025-03-22 09:37:22.256 [Thread-3] INFO  com.saadbarhrouj.server.TCPServer - Reçu du client: 
+2025-03-22 09:37:22.256 [Thread-3] WARN  com.saadbarhrouj.server.TCPServer - Commande inconnue reçue: 
+2025-03-22 09:37:27.796 [Thread-3] INFO  com.saadbarhrouj.server.TCPServer - Reçu du client: SEND_MESSAGE Hello from Telnet!
+2025-03-22 09:50:35.012 [main] INFO  com.saadbarhrouj.server.TCPServer - Serveur TCP démarré sur le port: 12345
+2025-03-22 09:50:35.023 [main] INFO  com.saadbarhrouj.server.TCPServer - Serveur UDP démarré sur le port: 12346
+2025-03-22 09:50:41.362 [main] INFO  com.saadbarhrouj.server.TCPServer - Nouvelle connexion TCP acceptée depuis: /127.0.0.1
+2025-03-22 09:50:41.373 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.network.TCPClient - Connecté au serveur TCP : localhost:12345
+2025-03-22 09:50:42.156 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.controller.LoginController - TCPClient défini dans LoginController : com.saadbarhrouj.client.network.TCPClient@47284962
+2025-03-22 09:50:42.606 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.ChatApp - Application lancée avec succès.
+2025-03-22 09:51:10.844 [Thread-1] INFO  com.saadbarhrouj.server.TCPServer - Reçu du client: LOGIN saida@gmail.com saida2001
+2025-03-22 09:51:10.845 [Thread-1] INFO  com.saadbarhrouj.server.TCPServer - Requete reçue: LOGIN saida@gmail.com saida2001
+2025-03-22 09:51:11.343 [Thread-1] DEBUG com.saadbarhrouj.server.database.DatabaseManager - Connexion à la base de données réussie.
+2025-03-22 09:51:11.422 [Thread-1] INFO  com.saadbarhrouj.server.database.UserDAO - Utilisateur validé: saida@gmail.com
+2025-03-22 09:51:11.463 [Thread-1] INFO  com.saadbarhrouj.server.TCPServer - Connexion réussie pour l'utilisateur: saida@gmail.com
+2025-03-22 09:51:11.477 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.controller.LoginController - Connexion réussie pour l'utilisateur: saida@gmail.com
+2025-03-22 09:51:11.516 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.controller.ChatViewController - ChatViewController initialisé.
+2025-03-22 09:51:11.524 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.controller.ChatViewController - Socket UDP Créé
+2025-03-22 09:51:11.526 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.controller.ChatViewController - ChatViewController: Utilisateur défini : saida@gmail.com
+2025-03-22 09:51:44.599 [main] INFO  com.saadbarhrouj.server.TCPServer - Nouvelle connexion TCP acceptée depuis: /0:0:0:0:0:0:0:1
+2025-03-22 09:51:57.136 [Thread-2] INFO  com.saadbarhrouj.server.TCPServer - Reçu du client: LLlLlllggdd
+2025-03-22 09:51:57.137 [Thread-2] INFO  com.saadbarhrouj.server.TCPServer - Requete reçue: LLlLlllggdd
+2025-03-22 09:51:57.138 [Thread-2] WARN  com.saadbarhrouj.server.TCPServer - Commande inconnue reçue: LLlLlllggdd
+2025-03-22 09:52:10.869 [Thread-2] INFO  com.saadbarhrouj.server.TCPServer - Reçu du client: LOGIN saad@gmail.com Saad2001
+2025-03-22 09:52:10.870 [Thread-2] INFO  com.saadbarhrouj.server.TCPServer - Requete reçue: LOGIN saad@gmail.com Saad2001
+2025-03-22 09:52:10.877 [Thread-2] DEBUG com.saadbarhrouj.server.database.DatabaseManager - Connexion à la base de données réussie.
+2025-03-22 09:52:10.880 [Thread-2] INFO  com.saadbarhrouj.server.database.UserDAO - Utilisateur validé: saad@gmail.com
+2025-03-22 09:52:10.881 [Thread-2] INFO  com.saadbarhrouj.server.TCPServer - Connexion réussie pour l'utilisateur: saad@gmail.com
+2025-03-22 09:55:04.156 [main] INFO  com.saadbarhrouj.server.TCPServer - Serveur TCP démarré sur le port: 12345
+2025-03-22 09:55:04.164 [main] INFO  com.saadbarhrouj.server.TCPServer - Serveur UDP démarré sur le port: 12346
+2025-03-22 09:55:09.574 [main] INFO  com.saadbarhrouj.server.TCPServer - Nouvelle connexion TCP acceptée depuis: /127.0.0.1
+2025-03-22 09:55:09.587 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.network.TCPClient - Connecté au serveur TCP : localhost:12345
+2025-03-22 09:55:10.478 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.controller.LoginController - TCPClient défini dans LoginController : com.saadbarhrouj.client.network.TCPClient@3154e32a
+2025-03-22 09:55:10.937 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.ChatApp - Application lancée avec succès.
+2025-03-22 09:55:13.302 [main] INFO  com.saadbarhrouj.server.TCPServer - Nouvelle connexion TCP acceptée depuis: /0:0:0:0:0:0:0:1
+2025-03-22 09:55:15.700 [Thread-2] INFO  com.saadbarhrouj.server.TCPServer - Reçu du client: LOGIN saad@gmail.com Saad2001
+2025-03-22 09:55:15.701 [Thread-2] INFO  com.saadbarhrouj.server.TCPServer - Requete reçue: LOGIN saad@gmail.com Saad2001
+2025-03-22 09:55:16.089 [Thread-2] DEBUG com.saadbarhrouj.server.database.DatabaseManager - Connexion à la base de données réussie.
+2025-03-22 09:55:16.153 [Thread-2] INFO  com.saadbarhrouj.server.database.UserDAO - Utilisateur validé: saad@gmail.com
+2025-03-22 09:55:16.186 [Thread-2] INFO  com.saadbarhrouj.server.TCPServer - Connexion réussie pour l'utilisateur: saad@gmail.com
+2025-03-22 09:55:16.187 [Thread-2] INFO  com.saadbarhrouj.server.TCPServer - Reçu du client: 
+2025-03-22 09:55:16.187 [Thread-2] INFO  com.saadbarhrouj.server.TCPServer - Requete reçue: 
+2025-03-22 09:55:16.188 [Thread-2] WARN  com.saadbarhrouj.server.TCPServer - Commande inconnue reçue: 
+2025-03-22 09:55:37.139 [Thread-1] INFO  com.saadbarhrouj.server.TCPServer - Reçu du client: LOGIN saida@gmail.com saida2001
+2025-03-22 09:55:37.140 [Thread-1] INFO  com.saadbarhrouj.server.TCPServer - Requete reçue: LOGIN saida@gmail.com saida2001
+2025-03-22 09:55:37.146 [Thread-1] DEBUG com.saadbarhrouj.server.database.DatabaseManager - Connexion à la base de données réussie.
+2025-03-22 09:55:37.149 [Thread-1] INFO  com.saadbarhrouj.server.database.UserDAO - Utilisateur validé: saida@gmail.com
+2025-03-22 09:55:37.150 [Thread-1] INFO  com.saadbarhrouj.server.TCPServer - Connexion réussie pour l'utilisateur: saida@gmail.com
+2025-03-22 09:55:37.162 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.controller.LoginController - Connexion réussie pour l'utilisateur: saida@gmail.com
+2025-03-22 09:55:37.200 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.controller.ChatViewController - ChatViewController initialisé.
+2025-03-22 09:55:37.212 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.controller.ChatViewController - Socket UDP Créé
+2025-03-22 09:55:37.214 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.controller.ChatViewController - ChatViewController: Utilisateur défini : saida@gmail.com
+2025-03-22 09:58:24.282 [main] INFO  com.saadbarhrouj.server.TCPServer - Serveur TCP démarré sur le port: 12345
+2025-03-22 09:58:24.292 [main] INFO  com.saadbarhrouj.server.TCPServer - Serveur UDP démarré sur le port: 12346
+2025-03-22 09:58:32.499 [main] INFO  com.saadbarhrouj.server.TCPServer - Nouvelle connexion TCP acceptée depuis: /127.0.0.1
+2025-03-22 09:58:32.509 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.network.TCPClient - Connecté au serveur TCP : localhost:12345
+2025-03-22 09:58:33.172 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.controller.LoginController - TCPClient défini dans LoginController : com.saadbarhrouj.client.network.TCPClient@7be2dc33
+2025-03-22 09:58:33.604 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.ChatApp - Application lancée avec succès.
+2025-03-22 09:58:51.363 [Thread-1] INFO  com.saadbarhrouj.server.TCPServer - Reçu du client: LOGIN saida@gmail.com saida2001
+2025-03-22 09:58:51.365 [Thread-1] INFO  com.saadbarhrouj.server.TCPServer - Requete reçue: LOGIN saida@gmail.com saida2001
+2025-03-22 09:58:51.807 [Thread-1] DEBUG com.saadbarhrouj.server.database.DatabaseManager - Connexion à la base de données réussie.
+2025-03-22 09:58:51.871 [Thread-1] INFO  com.saadbarhrouj.server.database.UserDAO - Utilisateur validé: saida@gmail.com
+2025-03-22 09:58:51.905 [Thread-1] INFO  com.saadbarhrouj.server.TCPServer - Connexion réussie pour l'utilisateur: saida@gmail.com
+2025-03-22 09:58:51.918 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.controller.LoginController - Connexion réussie pour l'utilisateur: saida@gmail.com
+2025-03-22 09:58:51.947 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.controller.ChatViewController - ChatViewController initialisé.
+2025-03-22 09:58:51.953 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.controller.ChatViewController - Socket UDP Créé
+2025-03-22 09:58:51.956 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.controller.ChatViewController - ChatViewController: Utilisateur défini : saida@gmail.com
+2025-03-22 10:02:07.472 [Thread-1] ERROR com.saadbarhrouj.server.TCPServer - Erreur lors de la communication avec le client.
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796) ~[?:?]
+	at java.base/java.net.Socket$SocketInputStream.implRead(Socket.java:1108) ~[?:?]
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1095) ~[?:?]
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350) ~[?:?]
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393) ~[?:?]
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217) ~[?:?]
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171) ~[?:?]
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:186) ~[?:?]
+	at java.base/java.io.BufferedReader.fill(BufferedReader.java:160) ~[?:?]
+	at java.base/java.io.BufferedReader.implReadLine(BufferedReader.java:370) ~[?:?]
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:347) ~[?:?]
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:436) ~[?:?]
+	at com.saadbarhrouj.server.TCPServer$ClientHandler.run(TCPServer.java:123) [classes/:?]
+2025-03-22 10:02:07.524 [Thread-1] INFO  com.saadbarhrouj.server.TCPServer - Connexion TCP avec /127.0.0.1 fermée.
+2025-03-22 10:02:10.420 [main] INFO  com.saadbarhrouj.server.TCPServer - Nouvelle connexion TCP acceptée depuis: /127.0.0.1
+2025-03-22 10:02:10.429 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.network.TCPClient - Connecté au serveur TCP : localhost:12345
+2025-03-22 10:02:11.156 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.controller.LoginController - TCPClient défini dans LoginController : com.saadbarhrouj.client.network.TCPClient@52253fd
+2025-03-22 10:02:11.591 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.ChatApp - Application lancée avec succès.
+2025-03-22 10:02:34.826 [Thread-2] INFO  com.saadbarhrouj.server.TCPServer - Reçu du client: LOGIN saida@gmail.com saida
+2025-03-22 10:02:34.828 [Thread-2] INFO  com.saadbarhrouj.server.TCPServer - Requete reçue: LOGIN saida@gmail.com saida
+2025-03-22 10:02:34.837 [Thread-2] DEBUG com.saadbarhrouj.server.database.DatabaseManager - Connexion à la base de données réussie.
+2025-03-22 10:02:34.839 [Thread-2] WARN  com.saadbarhrouj.server.database.UserDAO - Utilisateur non validé: saida@gmail.com
+2025-03-22 10:02:34.840 [Thread-2] WARN  com.saadbarhrouj.server.TCPServer - Echec de la connexion pour l'utilisateur: saida@gmail.com
+2025-03-22 10:02:34.841 [JavaFX Application Thread] WARN  com.saadbarhrouj.client.network.TCPClient - Echec de la connexion: LOGIN_FAILED
+2025-03-22 10:02:34.841 [JavaFX Application Thread] WARN  com.saadbarhrouj.client.controller.LoginController - Echec de la connexion pour l'utilisateur: saida@gmail.com
+2025-03-22 10:02:40.882 [Thread-2] INFO  com.saadbarhrouj.server.TCPServer - Reçu du client: LOGIN saida@gmail.com saida2001
+2025-03-22 10:02:40.882 [Thread-2] INFO  com.saadbarhrouj.server.TCPServer - Requete reçue: LOGIN saida@gmail.com saida2001
+2025-03-22 10:02:40.888 [Thread-2] DEBUG com.saadbarhrouj.server.database.DatabaseManager - Connexion à la base de données réussie.
+2025-03-22 10:02:40.891 [Thread-2] INFO  com.saadbarhrouj.server.database.UserDAO - Utilisateur validé: saida@gmail.com
+2025-03-22 10:02:40.893 [Thread-2] INFO  com.saadbarhrouj.server.TCPServer - Connexion réussie pour l'utilisateur: saida@gmail.com
+2025-03-22 10:02:40.905 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.controller.LoginController - Connexion réussie pour l'utilisateur: saida@gmail.com
+2025-03-22 10:02:40.928 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.controller.ChatViewController - ChatViewController initialisé.
+2025-03-22 10:02:40.936 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.controller.ChatViewController - Socket UDP Créé
+2025-03-22 10:02:40.937 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.controller.ChatViewController - ChatViewController: Utilisateur défini : saida@gmail.com
+2025-03-22 10:03:28.217 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.controller.ChatViewController - Envoi du message UDP: hi
+2025-03-22 10:03:28.218 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.controller.ChatViewController - Message UDP envoyé.
+2025-03-22 10:03:28.230 [Thread-0] INFO  com.saadbarhrouj.server.TCPServer - Message UDP reçu de /127.0.0.1:56501: hi
+2025-03-22 10:03:28.232 [Thread-3] INFO  com.saadbarhrouj.client.controller.ChatViewController - ACK reçu du serveur.
+2025-03-22 10:03:36.481 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.controller.ChatViewController - Envoi du message UDP: hi
+2025-03-22 10:03:36.481 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.controller.ChatViewController - Message UDP envoyé.
+2025-03-22 10:03:36.482 [Thread-0] INFO  com.saadbarhrouj.server.TCPServer - Message UDP reçu de /127.0.0.1:56501: hi
+2025-03-22 10:03:36.482 [Thread-3] INFO  com.saadbarhrouj.client.controller.ChatViewController - ACK reçu du serveur.
+2025-03-22 10:03:37.484 [Thread-0] INFO  com.saadbarhrouj.server.TCPServer - Message UDP reçu de /127.0.0.1:56501: hi
+2025-03-22 10:03:37.484 [Timer-1] WARN  com.saadbarhrouj.client.controller.ChatViewController - Message retransmis : hi
+2025-03-22 10:03:37.485 [Thread-3] INFO  com.saadbarhrouj.client.controller.ChatViewController - ACK reçu du serveur.
+2025-03-22 10:03:38.487 [Thread-0] INFO  com.saadbarhrouj.server.TCPServer - Message UDP reçu de /127.0.0.1:56501: hi
+2025-03-22 10:03:38.487 [Timer-2] WARN  com.saadbarhrouj.client.controller.ChatViewController - Message retransmis : hi
+2025-03-22 10:03:38.489 [Thread-3] INFO  com.saadbarhrouj.client.controller.ChatViewController - ACK reçu du serveur.
+2025-03-22 10:03:39.490 [Thread-0] INFO  com.saadbarhrouj.server.TCPServer - Message UDP reçu de /127.0.0.1:56501: hi
+2025-03-22 10:03:39.490 [Timer-3] WARN  com.saadbarhrouj.client.controller.ChatViewController - Message retransmis : hi
+2025-03-22 10:03:39.492 [Thread-3] INFO  com.saadbarhrouj.client.controller.ChatViewController - ACK reçu du serveur.
+2025-03-22 10:03:40.494 [Thread-0] INFO  com.saadbarhrouj.server.TCPServer - Message UDP reçu de /127.0.0.1:56501: hi
+2025-03-22 10:03:40.494 [Timer-4] WARN  com.saadbarhrouj.client.controller.ChatViewController - Message retransmis : hi
+2025-03-22 10:03:40.495 [Thread-3] INFO  com.saadbarhrouj.client.controller.ChatViewController - ACK reçu du serveur.
+2025-03-22 10:03:41.497 [Thread-0] INFO  com.saadbarhrouj.server.TCPServer - Message UDP reçu de /127.0.0.1:56501: hi
+2025-03-22 10:03:41.497 [Timer-5] WARN  com.saadbarhrouj.client.controller.ChatViewController - Message retransmis : hi
+2025-03-22 10:03:41.498 [Thread-3] INFO  com.saadbarhrouj.client.controller.ChatViewController - ACK reçu du serveur.
+2025-03-22 10:03:49.538 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.controller.ChatViewController - Envoi du message UDP: h
+2025-03-22 10:03:49.538 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.controller.ChatViewController - Message UDP envoyé.
+2025-03-22 10:03:49.538 [Thread-0] INFO  com.saadbarhrouj.server.TCPServer - Message UDP reçu de /127.0.0.1:56501: h
+2025-03-22 10:03:49.539 [Thread-3] INFO  com.saadbarhrouj.client.controller.ChatViewController - ACK reçu du serveur.
+2025-03-22 10:03:50.539 [Thread-0] INFO  com.saadbarhrouj.server.TCPServer - Message UDP reçu de /127.0.0.1:56501: h
+2025-03-22 10:03:50.539 [Timer-7] WARN  com.saadbarhrouj.client.controller.ChatViewController - Message retransmis : h
+2025-03-22 10:03:50.541 [Thread-3] INFO  com.saadbarhrouj.client.controller.ChatViewController - ACK reçu du serveur.
+2025-03-22 10:03:51.542 [Thread-0] INFO  com.saadbarhrouj.server.TCPServer - Message UDP reçu de /127.0.0.1:56501: h
+2025-03-22 10:03:51.542 [Timer-8] WARN  com.saadbarhrouj.client.controller.ChatViewController - Message retransmis : h
+2025-03-22 10:03:51.544 [Thread-3] INFO  com.saadbarhrouj.client.controller.ChatViewController - ACK reçu du serveur.
+2025-03-22 10:03:52.546 [Thread-0] INFO  com.saadbarhrouj.server.TCPServer - Message UDP reçu de /127.0.0.1:56501: h
+2025-03-22 10:03:52.546 [Timer-9] WARN  com.saadbarhrouj.client.controller.ChatViewController - Message retransmis : h
+2025-03-22 10:03:52.547 [Thread-3] INFO  com.saadbarhrouj.client.controller.ChatViewController - ACK reçu du serveur.
+2025-03-22 10:03:53.549 [Thread-0] INFO  com.saadbarhrouj.server.TCPServer - Message UDP reçu de /127.0.0.1:56501: h
+2025-03-22 10:03:53.549 [Timer-10] WARN  com.saadbarhrouj.client.controller.ChatViewController - Message retransmis : h
+2025-03-22 10:03:53.551 [Thread-3] INFO  com.saadbarhrouj.client.controller.ChatViewController - ACK reçu du serveur.
+2025-03-22 10:04:07.249 [main] INFO  com.saadbarhrouj.server.TCPServer - Nouvelle connexion TCP acceptée depuis: /0:0:0:0:0:0:0:1
+2025-03-22 10:04:08.427 [Thread-3] INFO  com.saadbarhrouj.server.TCPServer - Reçu du client: 
+2025-03-22 10:04:08.428 [Thread-3] INFO  com.saadbarhrouj.server.TCPServer - Requete reçue: 
+2025-03-22 10:04:08.429 [Thread-3] WARN  com.saadbarhrouj.server.TCPServer - Commande inconnue reçue: 
+2025-03-22 10:04:20.702 [Thread-3] INFO  com.saadbarhrouj.server.TCPServer - Reçu du client: LOGIN saad@gmail.com Saad2001
+2025-03-22 10:04:20.703 [Thread-3] INFO  com.saadbarhrouj.server.TCPServer - Requete reçue: LOGIN saad@gmail.com Saad2001
+2025-03-22 10:04:20.710 [Thread-3] DEBUG com.saadbarhrouj.server.database.DatabaseManager - Connexion à la base de données réussie.
+2025-03-22 10:04:20.712 [Thread-3] INFO  com.saadbarhrouj.server.database.UserDAO - Utilisateur validé: saad@gmail.com
+2025-03-22 10:04:20.714 [Thread-3] INFO  com.saadbarhrouj.server.TCPServer - Connexion réussie pour l'utilisateur: saad@gmail.com
+2025-03-22 10:04:30.065 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.controller.ChatViewController - Envoi du message UDP: sss
+2025-03-22 10:04:30.066 [JavaFX Application Thread] INFO  com.saadbarhrouj.client.controller.ChatViewController - Message UDP envoyé.
+2025-03-22 10:04:30.066 [Thread-0] INFO  com.saadbarhrouj.server.TCPServer - Message UDP reçu de /127.0.0.1:56501: sss
+2025-03-22 10:04:30.067 [Thread-3] INFO  com.saadbarhrouj.client.controller.ChatViewController - ACK reçu du serveur.
+2025-03-22 10:04:31.068 [Thread-0] INFO  com.saadbarhrouj.server.TCPServer - Message UDP reçu de /127.0.0.1:56501: sss
+2025-03-22 10:04:31.068 [Timer-12] WARN  com.saadbarhrouj.client.controller.ChatViewController - Message retransmis : sss
+2025-03-22 10:04:31.070 [Thread-3] INFO  com.saadbarhrouj.client.controller.ChatViewController - ACK reçu du serveur.
+2025-03-22 10:04:32.070 [Thread-0] INFO  com.saadbarhrouj.server.TCPServer - Message UDP reçu de /127.0.0.1:56501: sss
+2025-03-22 10:04:32.070 [Timer-13] WARN  com.saadbarhrouj.client.controller.ChatViewController - Message retransmis : sss
+2025-03-22 10:04:32.072 [Thread-3] INFO  com.saadbarhrouj.client.controller.ChatViewController - ACK reçu du serveur.
+2025-03-22 10:04:33.074 [Thread-0] INFO  com.saadbarhrouj.server.TCPServer - Message UDP reçu de /127.0.0.1:56501: sss
+2025-03-22 10:04:33.074 [Timer-14] WARN  com.saadbarhrouj.client.controller.ChatViewController - Message retransmis : sss
+2025-03-22 10:04:33.075 [Thread-3] INFO  com.saadbarhrouj.client.controller.ChatViewController - ACK reçu du serveur.
+2025-03-22 10:04:34.077 [Thread-0] INFO  com.saadbarhrouj.server.TCPServer - Message UDP reçu de /127.0.0.1:56501: sss
+2025-03-22 10:04:34.077 [Timer-15] WARN  com.saadbarhrouj.client.controller.ChatViewController - Message retransmis : sss
+2025-03-22 10:04:34.078 [Thread-3] INFO  com.saadbarhrouj.client.controller.ChatViewController - ACK reçu du serveur.
+2025-03-22 10:04:35.081 [Thread-0] INFO  com.saadbarhrouj.server.TCPServer - Message UDP reçu de /127.0.0.1:56501: sss
+2025-03-22 10:04:35.081 [Timer-16] WARN  com.saadbarhrouj.client.controller.ChatViewController - Message retransmis : sss
+2025-03-22 10:04:35.082 [Thread-3] INFO  com.saadbarhrouj.client.controller.ChatViewController - ACK reçu du serveur.
+2025-03-22 10:04:36.084 [Thread-0] INFO  com.saadbarhrouj.server.TCPServer - Message UDP reçu de /127.0.0.1:56501: sss
+2025-03-22 10:04:36.084 [Timer-17] WARN  com.saadbarhrouj.client.controller.ChatViewController - Message retransmis : sss
+2025-03-22 10:04:36.085 [Thread-3] INFO  com.saadbarhrouj.client.controller.ChatViewController - ACK reçu du serveur.
+2025-03-22 10:04:37.087 [Thread-0] INFO  com.saadbarhrouj.server.TCPServer - Message UDP reçu de /127.0.0.1:56501: sss
+2025-03-22 10:04:37.087 [Timer-18] WARN  com.saadbarhrouj.client.controller.ChatViewController - Message retransmis : sss
+2025-03-22 10:04:37.088 [Thread-3] INFO  com.saadbarhrouj.client.controller.ChatViewController - ACK reçu du serveur.
+2025-03-22 10:04:38.089 [Thread-0] INFO  com.saadbarhrouj.server.TCPServer - Message UDP reçu de /127.0.0.1:56501: sss
+2025-03-22 10:04:38.089 [Timer-19] WARN  com.saadbarhrouj.client.controller.ChatViewController - Message retransmis : sss
+2025-03-22 10:04:38.089 [Thread-3] INFO  com.saadbarhrouj.client.controller.ChatViewController - ACK reçu du serveur.
+2025-03-22 10:04:39.090 [Thread-0] INFO  com.saadbarhrouj.server.TCPServer - Message UDP reçu de /127.0.0.1:56501: sss
+2025-03-22 10:04:39.090 [Timer-20] WARN  com.saadbarhrouj.client.controller.ChatViewController - Message retransmis : sss
+2025-03-22 10:04:39.091 [Thread-3] INFO  com.saadbarhrouj.client.controller.ChatViewController - ACK reçu du serveur.
+2025-03-22 10:04:40.095 [Thread-0] INFO  com.saadbarhrouj.server.TCPServer - Message UDP reçu de /127.0.0.1:56501: sss
+2025-03-22 10:04:40.094 [Timer-21] WARN  com.saadbarhrouj.client.controller.ChatViewController - Message retransmis : sss
+2025-03-22 10:04:40.096 [Thread-3] INFO  com.saadbarhrouj.client.controller.ChatViewController - ACK reçu du serveur.
+2025-03-22 10:04:41.098 [Thread-0] INFO  com.saadbarhrouj.server.TCPServer - Message UDP reçu de /127.0.0.1:56501: sss
+2025-03-22 10:04:41.098 [Timer-22] WARN  com.saadbarhrouj.client.controller.ChatViewController - Message retransmis : sss
+2025-03-22 10:04:41.099 [Thread-3] INFO  com.saadbarhrouj.client.controller.ChatViewController - ACK reçu du serveur.
+2025-03-22 10:04:42.100 [Thread-0] INFO  com.saadbarhrouj.server.TCPServer - Message UDP reçu de /127.0.0.1:56501: sss
+2025-03-22 10:04:42.100 [Timer-23] WARN  com.saadbarhrouj.client.controller.ChatViewController - Message retransmis : sss
+2025-03-22 10:04:42.101 [Thread-3] INFO  com.saadbarhrouj.client.controller.ChatViewController - ACK reçu du serveur.
+2025-03-22 10:04:43.102 [Thread-0] INFO  com.saadbarhrouj.server.TCPServer - Message UDP reçu de /127.0.0.1:56501: sss
+2025-03-22 10:04:43.102 [Timer-24] WARN  com.saadbarhrouj.client.controller.ChatViewController - Message retransmis : sss
+2025-03-22 10:04:43.104 [Thread-3] INFO  com.saadbarhrouj.client.controller.ChatViewController - ACK reçu du serveur.
+2025-03-22 10:04:44.105 [Thread-0] INFO  com.saadbarhrouj.server.TCPServer - Message UDP reçu de /127.0.0.1:56501: sss
+2025-03-22 10:04:44.105 [Timer-25] WARN  com.saadbarhrouj.client.controller.ChatViewController - Message retransmis : sss
+2025-03-22 10:04:44.107 [Thread-3] INFO  com.saadbarhrouj.client.controller.ChatViewController - ACK reçu du serveur.

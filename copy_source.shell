@@ -1,0 +1,67 @@
+#!/bin/bash
+
+# Répertoire courant
+WORKSPACE_DIR=$(pwd)
+TEMP_FILE="/tmp/code_content_$(date +%Y%m%d_%H%M%S).txt"
+
+echo "🔍 Recherche des fichiers dans le workspace..."
+echo "📂 Workspace: $WORKSPACE_DIR"
+
+# Trouver tous les fichiers .fxml et .java, en excluant les répertoires spécifiés
+find "$WORKSPACE_DIR" \
+    -type f \( -name "*.fxml" -o -name "*.java" \) \
+    ! -path "*/node_modules/*" \
+    ! -path "*/target/*" \
+    ! -path "*/.git/*" \
+    ! -path "*/dist/*" \
+    ! -path "*/build/*" \
+    ! -path "*/out/*" \
+    ! -path "*/.idea/*" > "$TEMP_FILE.list"
+
+# Compter les fichiers
+FILE_COUNT=$(wc -l < "$TEMP_FILE.list")
+
+# Vérifier si des fichiers ont été trouvés
+if [ "$FILE_COUNT" -eq 0 ]; then
+    echo "❌ Aucun fichier .fxml ou .java trouvé dans le workspace (en excluant les répertoires spécifiés)."
+    rm "$TEMP_FILE.list"
+    exit 1
+fi
+
+echo "🔢 Nombre de fichiers trouvés: $FILE_COUNT"
+
+# Initialiser le fichier temporaire
+echo "" > "$TEMP_FILE"
+
+# Pour chaque fichier, ajouter son chemin et son contenu au fichier temporaire
+while IFS= read -r file; do
+    echo -e "\n\n// ============================================" >> "$TEMP_FILE"
+    echo -e "// FICHIER: $file" >> "$TEMP_FILE"
+    echo -e "// ============================================\n" >> "$TEMP_FILE"
+    cat "$file" >> "$TEMP_FILE"
+done < "$TEMP_FILE.list"
+
+# Copier le contenu dans le presse-papiers (macOS)
+if command -v pbcopy &> /dev/null
+then
+    cat "$TEMP_FILE" | pbcopy
+    echo "✅ Contenu copié dans le presse-papiers (pbcopy) !"
+# Copier le contenu dans le presse-papiers (Linux - needs xclip or xsel)
+elif command -v xclip &> /dev/null
+then
+    cat "$TEMP_FILE" | xclip -selection clipboard
+    echo "✅ Contenu copié dans le presse-papiers (xclip) !"
+elif command -v xsel &> /dev/null
+then
+    cat "$TEMP_FILE" | xsel -b -i
+    echo "✅ Contenu copié dans le presse-papiers (xsel) !"
+else
+    echo "❌ Aucun outil de presse-papiers trouvé (pbcopy, xclip, xsel). Contenu non copié."
+fi
+
+echo "📋 $FILE_COUNT fichiers copiés (code source uniquement, pas d'images)"
+
+# Nettoyer les fichiers temporaires
+rm "$TEMP_FILE" "$TEMP_FILE.list"
+
+exit 0
